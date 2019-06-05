@@ -1,0 +1,12 @@
+<h1>Songs</h1>
+<h2>by Code Blooded Rappers</h2>
+
+  <ul>
+    <%@songs.each do |song|%>
+
+    <li>
+      <a href="/songs/<%=song.id%>"><%=song.name%></a>
+    </li>
+
+    <%end%>
+  </ul>
